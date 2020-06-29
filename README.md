@@ -31,6 +31,7 @@ Action Space - Switch || Not Switch
   
 # 训练了两个环境（单十字路口，图中b和a）
 ## １．仅有up和left有车驶入，并交叉驶出；车辆类型较少。
+* 模型和结果都在single_intection_lane2文件夹下
 * 训练运行learnLane2.py  
 训练效果，输入在两车道上流量相同  
 ![](single_intection_lane2/RLImage/2l1.png)  
@@ -65,6 +66,7 @@ Action Space - Switch || Not Switch
   
 ## ２．各车道上都有相同流量的输入
 训练效果，输入在各车道上流量相同；车辆类型６种。  
+* 模型和结果都在single_intection_lane2文件夹下
 * 训练运行learnLane4.py
 
 ![](single_intection_lane4/RLImage/4r1qlen.png)  
