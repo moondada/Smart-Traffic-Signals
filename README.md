@@ -4,19 +4,19 @@ Smart Traffic Signals with PARL
 原开源项目：https://github.com/Ujwal2910/Smart-Traffic-Signals-in-India-using-Deep-Reinforcement-Learning-and-Advanced-Computer-Vision  
 
 environment:  
-*paddlepaddle==1.6.3  
-parl==1.3.1  
-sumo == 1.6.0  
-mss == 2.0.18（探索初期用到了，不过运行该项目似乎用不到)  *
+* paddlepaddle==1.6.3 *  
+* parl==1.3.1 *  
+* sumo == 1.6.0 *  
+* mss == 2.0.18（探索初期用到了，不过运行该项目似乎用不到) *
   
-＃训练了两个环境（单十字路口）
-##１．仅有up和left有车驶入，并交叉驶出；车辆类型较少。
-*训练运行learnLane2.py*
+＃ 训练了两个环境（单十字路口）
+## １．仅有up和left有车驶入，并交叉驶出；车辆类型较少。
+* 训练运行learnLane2.py *
 训练效果，输入在两车道上流量相同  
 ![](single_intection_lane2/RLImage/2l1.png)  
 可以看到随着迭代次数增加，各路口前的平均队列长度减少了。  
     
-*测试运行testLane2.py*
+* 测试运行testLane2.py *
 测试结果（在原始输入上）：  
 ![](single_intection_lane2/2r1.gif)  
 用时００－３４－１５  
