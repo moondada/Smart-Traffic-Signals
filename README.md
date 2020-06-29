@@ -66,7 +66,7 @@ Action Space - Switch || Not Switch
   
 ## ２．各车道上都有相同流量的输入
 训练效果，输入在各车道上流量相同；车辆类型６种。  
-* 模型和结果都在single_intection_lane2文件夹下
+* 模型和结果都在single_intection_lane４文件夹下
 * 训练运行learnLane4.py
 
 ![](single_intection_lane4/RLImage/4r1qlen.png)  
