@@ -1,15 +1,35 @@
 # Smart-Traffic-Signals
 Smart Traffic Signals with PARL  
-5星环境：交通信号灯控制  
+创意赛5星环境：交通信号灯控制  
 原开源项目：https://github.com/Ujwal2910/Smart-Traffic-Signals-in-India-using-Deep-Reinforcement-Learning-and-Advanced-Computer-Vision  
 
-environment:  
+Requirement:  
 * paddlepaddle==1.6.3  
 * parl==1.3.1  
 * sumo == 1.6.0  
 * mss == 2.0.18（探索初期用到了，不过运行该项目似乎用不到)  
   
-# 训练了两个环境（单十字路口）
+#  SUMO Environment-
+
+We have used SUMO as our running environment and have experimented with number of sceneraios and agents. Following image shall better help understand the scenarios used-
+![Scenarios](bgsub.PNG)
+### Scenarios tested on single intersection. 
+**In (a), equal traffic is supplied to all the carriageways. In (b), equal traffic is supplied to two of the carriageways, the other two carriageways are kept empty. In (c), the traffic in the two non-empty carriageways is made unequal. In (d), an obstacle (labeled in red) is introduced in one of the carriageways.**
+  
+# RL model-
+The Queue length obtained from the CV module goes into the RL model. We have used Queue length as our state space and the decision to switch green signal to the next lane or not is decided by the RL model. 
+
+***
+
+State space - Queue lengths+ Phases 
+
+Action Space - Switch || Not Switch
+
+***
+
+以上是原开源项目的环境和算法，本项目除了使用PARL替代tensorflow进行深度强化学习，在环境和算法上未做太大改动。算法为DQN+Experience Replay+Fixed-Q-Target。
+  
+# 训练了两个环境（单十字路口，图中b和a）
 ## １．仅有up和left有车驶入，并交叉驶出；车辆类型较少。
 * 训练运行learnLane2.py  
 训练效果，输入在两车道上流量相同  
