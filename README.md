@@ -65,13 +65,13 @@ Action Space - Switch || Not Switch
   
 ## ２．各车道上都有相同流量的输入
 训练效果，输入在各车道上流量相同；车辆类型６种。  
-* 训练运行learnLane2.py
+* 训练运行learnLane4.py
 
 ![](single_intection_lane4/RLImage/4r1qlen.png)  
 
 可以看到随着迭代次数增加，各路口前的平均队列长度减少了。  
     
-* 测试运行testLane2.py
+* 测试运行testLane4.py
 
 测试结果（在原始输入上）：
 
