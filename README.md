@@ -60,7 +60,7 @@ Action Space - Switch || Not Switch
 用时００－４１－５９  
 差距会更加显著。  
   
-除了时间以外，RL策略的平均队列长度、等待时间等等的标准也是优于uniform策略的。在single_intection_lane2/uniImage和single_intection_lane2/RLImage目录下可以看到两个策略在原始数据和修改数据上的训练效果。  
+除了时间以外，RL策略的平均队列长度、等待时间等等的标准也是优于uniform策略的。在single_intection_lane2/uniImage和single_intection_lane2/RLImage目录下可以看到两个策略在原始数据和修改数据上的测试效果。  
   
   
 ## ２．各车道上都有相同流量的输入
